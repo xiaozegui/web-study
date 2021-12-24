@@ -1,0 +1,29 @@
+body,#app,.el-aside,.el-main,.el-footer,.el-card,.el-scrollbar,.el-menu-item,.el-menu,#mylogo,.myheader,.el-page-header,.main-scrollbar,
+.el-textarea,.myfooter,.el-scrollbar__wrap,.el-scrollbar__view{
+	background-color: #666666;
+}
+.main-scrollbar{
+	background-color: #666666!important;
+}
+.el-textarea{
+	background-color: #666666!important;
+}
+.el-header{
+	background-color: #666666!important;
+}
+.el-textarea__inner{
+	background-color: #999999;
+}
+.el-input__inner{
+	background-color: #666666!important;
+}
+.el-main{
+	background-color: #666666!important;
+}
+.el-table, .el-table__expanded-cell{
+	background-color: #666666!important;
+}
+th,td{
+	background-color: #999999!important;
+}
+

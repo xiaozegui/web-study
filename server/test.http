@@ -1,0 +1,146 @@
+@url = http://localhost:3000/api
+@json = Content-Type: application/json
+
+###
+get {{url}}/users
+
+###
+
+post {{url}}/login
+{{json}}
+
+{
+    "username":"admin",
+    "password":"123456"
+}
+
+###
+post {{url}}/user
+{{json}}
+
+{
+    "username":"admin"
+}
+
+###
+
+post {{url}}/register
+{{json}}
+
+{
+    "username":"user2",
+    "password":"1234567",
+    "gender":"男",
+    "birthday":"2021-3-10",
+    "location":"shantou",
+    "specialsign":"good good study"
+}
+
+###
+get {{url}}/charts
+
+
+###
+post {{url}}/chart
+{{json}}
+
+{
+    "username":admin,
+    "page":"/index"
+}
+
+###
+post {{url}}/pagechart
+{{json}}
+
+{
+    "page":"/indecom"
+}
+
+###
+post {{url}}/usernamecharts
+{{json}}
+
+{
+    "username":"user1"
+}
+
+###
+get {{url}}/profile
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNTM2ZDg3ZTc2NTM0MmI5MTlkNzA2YyIsImlhdCI6MTYxNjExNjU2NH0.rbyv-EALQx7fpT-x0Pp3BdnxjBMH5JYAfcDMQ85QJ5M
+
+###
+post {{url}}/insertchart
+{{json}}
+
+{
+    "username":"user1",
+    "page":"/index",
+    "content":"hahahahahahahhaha",
+    "time":"1111"
+}
+
+###
+post {{url}}/updateuser
+{{json}}
+
+{
+    "username":"user1",
+    "password":"1234567",
+    "gender":"女",
+    "birthday":"2021-3-13",
+    "location":"shantou",
+    "specialsign":"good good study"
+}
+###
+post {{url}}/updatepassword
+{{json}}
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+###
+post {{url}}/updatechart
+{{json}}
+
+{   "id":"60548909493fa01564a0b787",
+    "username":"user1",
+    "page":"/video",
+    "content":"lalal",
+    "time":"2021-2-11"
+}
+
+###
+post {{url}}/deletechart
+{{json}}
+
+{
+    "username":"admin",
+    "page":"/index"
+}
+
+###
+post {{url}}/deleteuser
+{{json}}
+
+{
+    "username":"user"
+}
+
+###
+post {{url}}/tokenuser
+{{json}}
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNTQ4N2UyZGRhNjdlMTBiYzJiYWE4NSIsImlhdCI6MTYxNjMwNTczM30.vkpCrmeHXRPHaY4l2DaseR3UB6_XklP9QwhHVasbMqg"
+}
+
+###
+post {{url}}/checkusername
+{{json}}
+
+{
+    "username":"admin1"
+}

@@ -1,0 +1,58 @@
+html,
+body,
+#app {
+	height: calc(100vh - 82px);
+	margin: 0px;
+	padding: 0px;
+	overflow: visible;
+	font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.el-scrollbar__wrap {
+	overflow-x: auto;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 400;
+	width: 100%;
+	line-height: 1.5em;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+	text-align: left;
+}
+
+.header-anchor {
+	opacity: 0.5;
+	margin-right: 6px;
+	font-size: 20px;
+	color: #409EFF;
+	width: 20px;
+}
+
+.header-anchor:hover {
+	opacity: 1;
+}
+
+.el-autocomplete-suggestion li {
+	line-height: 25px !important;
+}
+
+.highlighted .addr {
+	color: #ddd;
+}
+
+.my-autocomplete {
+	padding-bottom: 10px !important;
+}
+
+.el-badge__content.is-fixed {
+	top: 14px;
+}
